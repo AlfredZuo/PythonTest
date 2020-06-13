@@ -12,6 +12,7 @@ class GameSprite(pygame.sprite.Sprite):
         super().__init__()
 
         # 定义对象的属性
+        # get_rect()只能得到两个参数，那就是一个图像的长宽像素
         self.image = pygame.image.load(image_name)
         self.rect = self.image.get_rect()
         self.speed = speed
