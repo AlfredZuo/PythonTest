@@ -20,6 +20,6 @@ class Solution:
         # for k in hash_table.keys():
         #     print(k)
         #     return k
-        l = list(hash_table.keys())
-        print(l, hash_table.get(l[0]))
-        return hash_table.get(l[0])
+        lst = list(hash_table.keys())
+        print(lst, hash_table.get(lst[0]))
+        return hash_table.get(lst[0])
