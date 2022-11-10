@@ -7,6 +7,7 @@
 输出: 1
 """
 
+
 class Solution:
     def singleNumber(self, nums: List[int]) -> int:
         hash_table = dict()
@@ -16,6 +17,9 @@ class Solution:
                 continue
             else:
                 hash_table[num] = num
-        for k in hash_table.keys():
-            print(k)
-            return k
+        # for k in hash_table.keys():
+        #     print(k)
+        #     return k
+        l = list(hash_table.keys())
+        print(l, hash_table.get(l[0]))
+        return hash_table.get(l[0])
